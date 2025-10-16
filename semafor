@@ -1,0 +1,22 @@
+int zelena = 2;
+int zuta = 4;
+int crvena = 8;
+
+void setup() {
+  pinMode(zelena, OUTPUT);
+  pinMode(zuta, OUTPUT);
+  pinMode(crvena, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(crvena, HIGH);
+  delay(7000);
+  digitalWrite(crvena, LOW);
+  digitalWrite(zuta, HIGH);
+  delay(2500);
+  digitalWrite(zuta, LOW);
+  digitalWrite(zelena, HIGH);
+  delay(6500);
+  digitalWrite(zelena, LOW);
+
+}
